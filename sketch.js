@@ -1,10 +1,11 @@
 function setup() {
   createCanvas(600, 600);
+  background(49, 21, 80);
 }
 
 function draw() {
-  background(49, 21, 80);
   noStroke();
   fill(random(255), random(255), random(255), random(255));
-  circle(300, 300, 300);
+  circle(random(600), random(600), random(200));
+  frameRate(24);
 }
