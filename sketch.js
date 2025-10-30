@@ -1,4 +1,4 @@
-// Click and drag the mouse to view the scene from different angles.
+size = 50;
 
 function setup() {
   createCanvas(600, 600);
@@ -6,7 +6,8 @@ function setup() {
 }
 
 function draw() {
-  fill(random(255), random(255), random(255), random(255));
-  rectMode(CENTER);
-  square(mouseX, mouseY, 100);
+  circle(300, 300, size);
+  if (mouseIsPressed) {
+    size += 2;
+  }
 }
