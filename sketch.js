@@ -19,5 +19,17 @@ function draw() {
       x += 4;
     }
   }
+
+  if (x - size / 2 > width) {
+    x = 0;
+  } else if (x + size / 2 < 0) {
+    x = 600;
+  }
+  if (y - size / 2 > height) {
+    y = 0;
+  } else if (y + size / 2 < 0) {
+    y = 600;
+  }
+
   circle(x, y, size);
 }
